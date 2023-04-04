@@ -1,4 +1,4 @@
-d3.csv('astronautas.csv', d3.autoType).then(data => {
+d3.csv('../astronautas.csv', d3.autoType).then(data => {
 
   let chart = Plot.plot({
     marks: [
