@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de datos, marcas gráficas y canales de codificación visual</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column col-12">
+          <br />
+          <p class="label">VISUALIZACIÓN DE DATOS | LTD - UTDT</p>
+
+          <h1 id="titulo"> TP 2 | Explicar con datos <small><a href="#traduccion"></a></small></h1>
+
+          <p>Integrantes del grupo: Juan Manuel Basso, Valentino Pivotto.</p>
+          <p>Gráficos explorativos realizados a partir de un conjunto de datos sobre misiones espaciales entre el 1 de enero de 2010 y el 15 de enero de 2020. Los mismos fueron recopilados por la NASA (Estados Unidos), Roscosmos (Rusia) y otros sitios.</p>
+
+          <h4>La cantidad de astronautas viene descendiendo</h4>
+          <iframe src="dataviz_1/index.html" id="iFrameResizer0" scrolling="no" style="overflow: hidden; height: 420px;"></iframe>
+          <p>Es posible notar como la cantidad de astronautas que se embarcaron en una misión espacial viene casi en constante descenso desde 2010. La oveja negra es el 2016, donde hubieron la misma cantidad que en 2013, aunque luego de este año la tendencia retomó su ritmo previo.</p>
+
+          <h4>2014 y 2017, los outsiders</h4>
+          <iframe src="dataviz_2/index.html" id="iFrameResizer0" scrolling="no" style="overflow: hidden; height: 420px;"></iframe>
+          <p>Ajustando una regresión lineal a las variables x = "Año de la misión" e y = "Edad promedio de las tripulaciones", los valores que generan un efecto palanca (leverage) en el modelo son los correspondientes al año 2014 (señalizado en violeta) y 2017 (marcado en naranja). Estos años tuvieron, respectivamente, el menor y mayor promedio de edad de las tripulaciones.</p>
+
+          <h4>Mujeres, en promedio más jovenes</h4>
+          <iframe src="dataviz_3/index.html" id="iFrameResizer0" scrolling="no" style="overflow: hidden; height: 480px;"></iframe>
+          <p>Aprovechando la naturaleza categórica de la variable género en el dataset, es posible visualizar mediante un boxplot la relación entre dicha variable y la edad de cada tripulante. Una conclusión destacada es el hecho de que la mediana de edad en mujeres es considerablemente menor a la de los hombres (42 contra 47).</p>
+
+          <h4>Donde hay ingeniero no manda piloto</h4>
+          <iframe src="dataviz_4/index.html" id="iFrameResizer0" scrolling="no" style="overflow: hidden; height: 220px;"></iframe>
+          <p>Eso podría analizarse de las jerarquías en las naves espaciales si las mismas estuvieran basadas en cantidad de horas por misión.</p>
+          
+</div>
